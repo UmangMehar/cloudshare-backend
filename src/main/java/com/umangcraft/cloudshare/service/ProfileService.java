@@ -106,4 +106,16 @@ public class ProfileService {
         String clerkId = SecurityContextHolder.getContext().getAuthentication().getName();
         return profileRepository.findByClerkId(clerkId);
     }
+
+    public void updatePhoto(String clerkId, String url) {
+        ProfileDocument profile = profileRepository.findByClerkId(clerkId);
+
+        if (profile == null) {
+            throw new RuntimeException("Profile not found for clerkId: " + clerkId);
+        }
+
+        profile.setPhotoUrl(url);
+        profileRepository.save(profile);
+    }
+
 }
