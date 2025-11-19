@@ -1,3 +1,4 @@
+<img width="1898" height="830" alt="Screenshot 2025-11-19 092258" src="https://github.com/user-attachments/assets/63244bda-0916-48dd-b660-e11c1f0d4141" />
 📦 CloudShare – Backend (Spring Boot + MongoDB)
 
 CloudShare is a cloud-based file sharing platform that allows users to upload, manage, organize and share files securely.
