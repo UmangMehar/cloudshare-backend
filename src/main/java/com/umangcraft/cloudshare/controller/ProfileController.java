@@ -21,4 +21,5 @@ public class ProfileController {
         ProfileDTO savedProfile = profileService.createProfile(profileDTO);
         return ResponseEntity.status(status).body(savedProfile);
     }
+
 }
