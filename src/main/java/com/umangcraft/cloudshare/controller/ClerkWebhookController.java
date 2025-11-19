@@ -70,6 +70,7 @@ public class ClerkWebhookController {
     // -------------------------------------------------
 
     private void handleUserCreated(JsonNode data) {
+        System.out.println("🔥 WEBHOOK RECEIVED — USER CREATED");
         String clerkId = data.path("id").asText();
 
         String email = "";
